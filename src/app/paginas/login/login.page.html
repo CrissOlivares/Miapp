@@ -1,0 +1,25 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="titulos">INICIAR SESION</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-item>
+      <ion-input type="text" label="Nombre" [(ngModel)]="nombre" name="nombre" placeholder="Escribe aqui tu Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" label="Usuario" [(ngModel)]="usuario" name="usuario" placeholder="Escribe aqui tu Usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" label="Constrasena" [(ngModel)]="contrasena" name="contrasena" placeholder="Escribe aqui tu Constraseña"></ion-input>
+    </ion-item>
+
+    <ion-button  expand="block" (click)="ingresar()" color="primary">
+      Enviar
+    </ion-button>
+  </ion-content>
+</ion-app>
